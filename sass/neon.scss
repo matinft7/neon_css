@@ -1,0 +1,48 @@
+@import "vars";
+
+.neon{
+    border: $borderWidth solid $mainColor;
+    box-shadow: $shadow $shadowColor;
+    filter: brightness($brightness);
+}
+.neon-rotate{
+    border-radius: 50% !important;
+    border-top: $borderWidth solid transparent;
+    border-right: $borderWidth solid transparent;
+    border-width: $borderWidth;
+    animation: rotate $neonRotateDuration linear infinite;
+}
+.neon-tick{
+    animation: neon-tick $neonTickDuration ease-in-out infinite alternate;
+    transition: 0.5s;
+}
+.neon-text{
+    text-shadow: $neonTextColor 1px 0 15px;
+    color: rgb(255, 105, 217);
+    filter: brightness(150%);
+}
+.neon-text-tick{
+    animation: neon-text-tick $neonTextTickDuration infinite alternate;
+}
+@keyframes neon-tick{
+    from{}
+    to{
+        box-shadow: none;
+        border-color: transparent;
+    }
+}
+@keyframes neon-text-tick{
+    from{}
+    to{
+        color: transparent;
+        text-shadow: rgba(0,0,0,0.2) 1px 0 10px;
+    }
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
