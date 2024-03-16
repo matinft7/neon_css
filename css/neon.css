@@ -4,11 +4,42 @@
   filter: brightness(150%);
 }
 
+.green-neon {
+  border: 1.5px solid rgb(105, 255, 150);
+  box-shadow: 0 0px 16px 0 rgba(105, 255, 150, 0.3);
+  filter: brightness(150%);
+}
+
+.yellow-green-neon {
+  border: 1.5px solid rgb(216, 255, 0);
+  box-shadow: 0 0px 16px 0 rgba(216, 255, 0, 0.3);
+  filter: brightness(150%);
+}
+
+.cyan-neon {
+  border: 1.5px solid rgb(0, 255, 255);
+  box-shadow: 0 0px 16px 0 rgba(0, 255, 255, 0.3);
+  filter: brightness(150%);
+}
+
+.magenta-neon {
+  border: 1.5px solid rgb(212, 0, 255);
+  box-shadow: 0 0px 16px 0 rgba(212, 0, 255, 0.3);
+  filter: brightness(150%);
+}
+
+.red-orange-neon {
+  border: 1.5px solid rgb(255, 25, 0);
+  box-shadow: 0 0px 16px 0 rgba(255, 25, 0, 0.3);
+  filter: brightness(150%);
+}
+
 .neon-rotate {
   border-radius: 50% !important;
   border-top: 2px solid transparent;
   border-right: 2px solid transparent;
   border-width: 2px;
+  box-shadow: none;
   animation: rotate 2s linear infinite;
 }
 
@@ -25,12 +56,6 @@
 
 .neon-text-tick {
   animation: neon-text-tick 0.3s infinite alternate;
-}
-
-.green-neon {
-  border: 1.5px solid rgb(105, 255, 150);
-  box-shadow: 0 0px 16px 0 rgba(105, 255, 150, 0.3);
-  filter: brightness(150%);
 }
 
 @keyframes neon-tick {
